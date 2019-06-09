@@ -1,0 +1,93 @@
+h1, h2, h3, h4, h5, h6, hr, select, div, p, ol, ul, li, body, textarea {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #b9c9d2;
+}
+
+.cow {
+    margin: 0 auto;
+    width: 800px;
+    height: auto;
+
+}
+
+.pig {
+    height: 40px;
+    display: flex;
+    position: relative;
+    text-align: center;
+}
+
+.pig li {
+    height: 40px;
+    line-height: 40px;
+    flex-grow: 1;
+    transition: all ease 0.5s;
+    border: 1px solid #89919a;
+
+
+}
+
+.top {
+    width: 267px;
+    height: 40px;
+    background: #00C1DE;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: all ease-in 1s;
+}
+
+li.hot:nth-child(1) ~ .top {
+    transform: translate(0, 0);
+}
+
+li.hot:nth-child(2) ~ .top {
+    transform: translate(100%, 0);
+}
+
+li.hot:nth-child(3) ~ .top {
+    transform: translate(200%, 0);
+}
+
+.ctt {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.ctt li {
+    border-bottom: 1px solid #89919a;
+}
+.ctt li span{
+    float: right;
+    margin-left: 20px;
+}
+.ctt li del{
+    float: right;
+    margin-left: 20px;
+    text-decoration: none;
+}
+form{
+    margin: 0 auto;
+    width: 800px;
+    height: auto;
+}
+.addtext{
+    position: absolute;
+    left: 370px;
+    top: 13px;
+    resize: none;
+
+}
+.addanniu{
+    position: absolute;
+    left: 540px;
+    top: 12px;
+}
